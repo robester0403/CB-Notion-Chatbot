@@ -35,7 +35,7 @@ export default async function handler(
 
     //Ask a question
     const response = await chain.call({
-      query: sanitizedQuestion,
+      query: sanitizedQuestion, // You may be able to modify the query to get better results
     });
 
     console.log('response', response);

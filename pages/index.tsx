@@ -72,7 +72,7 @@ export default function Home() {
                 ref={inputRef}
                 className="flex h-10 w-full rounded-md border border-slate-300 bg-transparent py-2 px-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-700 dark:text-slate-900 dark:focus:ring-slate-400 dark:focus:ring-offset-slate-900"
                 type="text"
-                placeholder="What is Cron?"
+                placeholder="What do you want to ask?"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleEnter}
