@@ -31,7 +31,8 @@ export default async function handler(
 
     const model = openai;
     // create the chain
-    const chain = VectorDBQAChain.fromLLM(model, vectorStore);
+    let chain = VectorDBQAChain.fromLLM(model, vectorStore);
+    chain.returnSourceDocuments = true
 
     //Ask a question
     const response = await chain.call({
